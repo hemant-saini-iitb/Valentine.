@@ -93,11 +93,26 @@
       background: #ff1e50;
       transform: translateX(-50%) scale(1.05);
     }
+    .panda {
+  position: absolute;
+  top: 40px;
+  font-size: 80px;
+  animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(10deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
   </style>
 </head>
 
 <body>
-
+  <div class="panda">🐼</div>
   <div class="card">
     <h1>Hey ❤️</h1>
     <p>Will you be my Valentine?</p>
@@ -167,3 +182,4 @@
 
 </body>
 </html>
+
