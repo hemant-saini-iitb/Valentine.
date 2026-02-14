@@ -123,6 +123,10 @@
     </div>
   </div>
 
+  <audio id="bgMusic">
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
   <script>
     /* 💔 Runaway NO button */
     const noBtn = document.getElementById("noBtn");
@@ -140,6 +144,9 @@
 
     /* 💕 YES button success */
     yesBtn.addEventListener("click", () => {
+      const music = document.getElementById("bgMusic");
+music.play();
+
       document.body.innerHTML = `
         <div style="
           height:100vh;
@@ -182,4 +189,5 @@
 
 </body>
 </html>
+
 
